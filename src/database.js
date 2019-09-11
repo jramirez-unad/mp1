@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/notasApp', {
+mongoose.connect('mongodb://jramirez:jramirez@noteapp-db-iaehc.mongodb.net/test?retryWrites=true&w=majority', {
         useCreateIndex: true,
         useNewUrlParser: true,
         useFindAndModify: false
