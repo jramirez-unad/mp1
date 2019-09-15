@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const uri = 'mongodb+srv://jramirez:5I1EOkjPsl8aMzxf@noteapp-db-iaehc.mongodb.net/test?retryWrites=true&w=majority';
+const uri = 'mongodb+srv://jramirez:5I1EOkjPsl8aMzxf@noteapp-db-iaehc.mongodb.net/test?retryWrites=true&w=majority/notes-db-app';
 
 mongoose.connect(uri, {
         useCreateIndex: true,
