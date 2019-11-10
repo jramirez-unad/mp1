@@ -1,0 +1,31 @@
+{{!-- Tarjeta para agregar notas --}}
+<div class="col-md-4 mx-auto">
+    <div class="card"> 
+    <div class="card-header">
+        <h3>New Estudiante</h3>
+    </div> 
+    <div class="card-body">
+        <form action="/mp1/new-estudiante" method="POST">
+            <div class="form-group">
+                <input type="text" name="nombre" class="form-control" placeholder="Nombre" autofocus>    
+            </div>
+            <div class="form-group">
+                <input type="text" name="apellido" class="form-control" placeholder="Apellido">    
+            </div>
+            <div class="form-group">
+                <input type="text" name="matricula" class="form-control" placeholder="Matricula">    
+            </div>
+            <div class="form-group">
+                <input type="text" name="carrera" class="form-control" placeholder="Carrera">    
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary btn-block" type="submit">Save</button>
+            </div>
+        </form>
+    </div>
+    </div>
+</div>
+
+
+
+

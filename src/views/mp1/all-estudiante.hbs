@@ -1,13 +1,13 @@
 <div class="row">
-    {{#each notes}}
+    {{#each estudiante}}
         <div class="col-md-4">
             <div class="card">
                 <div class="card-body">
                     <h4 class="card-title d-flex justify-content-between aling-items-center">
-                        {{tittle}} <a href="/notes/edit/{{_id}}"><i class="fas fa-edit"></i></a>        
+                        {{nombre}} {{apellido}}<a href="/mp1/edit/{{_id}}"><i class="fas fa-edit"></i></a>        
                     </h4>
-                    <p class="lead">{{description}}</p>
-                    <form action="/notes/delete/{{_id}}?_method=DELETE" method="POST">
+                    <p class="lead">{{matricula}}, {{carrera}}</p>
+                    <form action="/mp1/delete/{{_id}}?_method=DELETE" method="POST">
                         <input type="hidden" name="_medthod" value="DELETE">
                         <button class="btn btn-danger btn-block btn-sm" type="submit">
                             Delete
@@ -19,9 +19,9 @@
     {{else}}
         <div class="card mx-auto">
             <div class="card-body">
-                <h2>Hello {{user.name}}</h2>
-                <p class="lead">There are not notes yet</p>
-                <a href="/notes/add" class="btn btn-success btn-block">Create One</a>
+                <h2>Hello</h2>
+                <p class="lead">There are not Estudiante yet</p>
+                <a href="/mp1/add" class="btn btn-success btn-block">Create One</a>
             </div>
         </div>
     {{/each}}
